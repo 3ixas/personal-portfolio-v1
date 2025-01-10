@@ -105,3 +105,36 @@ body {
   margin: 0 auto 1rem;
   border-radius: 10px;
 }
+#projects .project h4 {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  font-weight: 600px;
+}
+#projects .project h2 {
+  font-size: 38px;
+  margin-top: 0%;
+  margin-bottom: 0.5rem;
+  font-weight: 600px;
+}
+#projects .project p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 28.8px;
+}
+#projects .project .buttons {
+  display: flex;
+  gap: 1rem;
+}
+#projects .project .buttons .button {
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  border-radius: 5px;
+}
+#projects .project .buttons .button:hover {
+  background-color: black;
+  color: white;
+}

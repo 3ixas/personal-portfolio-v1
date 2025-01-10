@@ -118,5 +118,43 @@ body {
             margin: 0 auto 1rem;
             border-radius: 10px;
         }
+
+        h4 {
+            font-size: 16px;
+            margin-bottom: 0.5rem;
+            font-weight: 600px;
+        }
+
+        h2 {
+            font-size: 38px;
+            margin-top: 0%;
+            margin-bottom: 0.5rem;
+            font-weight: 600px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 28.8px;
+        }
+        .buttons {
+            display: flex;
+            gap: 1rem;
+
+            .button {
+                padding: 0.5rem 1rem;
+                border: 2px solid black;
+                text-decoration: none;
+                color: black;
+                font-weight: 700;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
     }
 }
