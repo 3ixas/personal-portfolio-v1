@@ -15,7 +15,7 @@ body {
 }
 
 #hero {
-  padding: 2rem 1rem;
+  padding: 32px 32px;
   text-align: left;
 }
 #hero p {
@@ -33,7 +33,7 @@ body {
 }
 
 #about {
-  padding: 2rem 1rem;
+  padding: 32px 32px;
   text-align: center;
 }
 #about h2 {
@@ -82,6 +82,9 @@ body {
 }
 #skills li {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #skills li img {
   width: 72px;
@@ -157,6 +160,10 @@ body {
 #projects .project .buttons .button:hover {
   background-color: black;
   color: white;
+}
+#projects .project .buttons .button img {
+  width: 24px;
+  height: 24px;
 }
 
 footer {
