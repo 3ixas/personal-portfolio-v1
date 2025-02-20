@@ -75,7 +75,9 @@ body {
 }
 
 .hero {
-    padding: 2rem 1rem;
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 
     &__content {
         p {
@@ -98,7 +100,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 4rem;
+        padding: 6rem 3rem;
 
         &__content {
             flex: 1;
@@ -124,10 +126,16 @@ body {
             }
         }
     }
+
+    @media (min-width: 1024px) {
+    padding: 8rem 6rem;
+    }
 }
 
 .about {
-    padding: 2rem 1rem;
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 
     &__container {
         display: flex;
@@ -159,7 +167,7 @@ body {
     }
 
     @media (min-width: 768px) {
-        padding: 4rem 6rem;
+        padding: 6rem 3rem;
 
         &__container {
             flex-direction: row;
@@ -194,10 +202,16 @@ body {
             }
         }
     }
+
+    @media (min-width: 1024px) {
+    padding: 8rem 6rem;
+    }
 }
 
 .skills {
-    padding: 2rem 1rem;
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 
     &__heading {
@@ -243,6 +257,8 @@ body {
     }
 
     @media (min-width: 768px) {
+        padding: 6rem 3rem;
+
         &__heading {
             font-size: 2rem;
             margin-bottom: 1rem;
@@ -264,10 +280,24 @@ body {
             font-weight: 500;
         }
     }
+
+    @media (min-width: 1024px) {
+    padding: 8rem 6rem;
+    }
 }
 
 #projects {
-    padding: 2rem;
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        padding: 6rem 3rem;
+    }
+
+    @media (min-width: 1024px) {
+    padding: 8rem 6rem;
+    }
 
     h2 {
         font-size: 1.5rem;
@@ -369,8 +399,9 @@ footer {
     font-family: 'CustomInter', Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
-    padding: 2rem 1rem;
-
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;

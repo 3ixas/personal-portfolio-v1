@@ -67,7 +67,9 @@ body {
 }
 
 .hero {
-  padding: 2rem 1rem;
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .hero__content p {
   font-size: 1rem;
@@ -86,7 +88,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 6rem 3rem;
   }
   .hero__content {
     flex: 1;
@@ -108,9 +110,16 @@ body {
     height: auto;
   }
 }
+@media (min-width: 1024px) {
+  .hero {
+    padding: 8rem 6rem;
+  }
+}
 
 .about {
-  padding: 2rem 1rem;
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .about__container {
   display: flex;
@@ -135,7 +144,7 @@ body {
 }
 @media (min-width: 768px) {
   .about {
-    padding: 4rem 6rem;
+    padding: 6rem 3rem;
   }
   .about__container {
     flex-direction: row;
@@ -165,9 +174,16 @@ body {
     color: #666;
   }
 }
+@media (min-width: 1024px) {
+  .about {
+    padding: 8rem 6rem;
+  }
+}
 
 .skills {
-  padding: 2rem 1rem;
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
 }
 .skills__heading {
@@ -207,6 +223,9 @@ body {
   text-align: center;
 }
 @media (min-width: 768px) {
+  .skills {
+    padding: 6rem 3rem;
+  }
   .skills__heading {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -225,9 +244,26 @@ body {
     font-weight: 500;
   }
 }
+@media (min-width: 1024px) {
+  .skills {
+    padding: 8rem 6rem;
+  }
+}
 
 #projects {
-  padding: 2rem;
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #projects {
+    padding: 6rem 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  #projects {
+    padding: 8rem 6rem;
+  }
 }
 #projects h2 {
   font-size: 1.5rem;
@@ -319,7 +355,9 @@ footer {
   font-family: "CustomInter", Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
-  padding: 2rem 1rem;
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
