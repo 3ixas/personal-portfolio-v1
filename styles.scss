@@ -12,6 +12,32 @@
     font-style: normal;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 3.5rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+
 .desktop-nav {
     font-family: 'CustomInter', Arial, Helvetica, sans-serif;
     display: none;
@@ -86,9 +112,7 @@ body {
         }
 
         h1 {
-            font-size: 2rem;
-            line-height: 1.2;
-            font-weight: bold;
+            text-align: left;
         }
     }
 
@@ -108,10 +132,6 @@ body {
 
             p {
                 font-size: 1.2rem;
-            }
-
-            h1 {
-                font-size: 2.5rem;
             }
         }
 
@@ -299,17 +319,6 @@ body {
     padding: 8rem 6rem;
     }
 
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-
-        @media (min-width: 768px) {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-    }
-
     .projects {
         display: grid;
         gap: 2rem;
@@ -334,14 +343,14 @@ body {
             margin-bottom: 1rem;
         }
 
-        h4 {
+        h2 {
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             margin-bottom: 1rem;
             font-weight: 700;
             color: #000;

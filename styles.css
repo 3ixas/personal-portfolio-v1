@@ -10,6 +10,35 @@
   font-weight: 100 700;
   font-style: normal;
 }
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .desktop-nav {
   font-family: "CustomInter", Arial, Helvetica, sans-serif;
   display: none;
@@ -76,9 +105,7 @@ body {
   margin-bottom: 1rem;
 }
 .hero__content h1 {
-  font-size: 2rem;
-  line-height: 1.2;
-  font-weight: bold;
+  text-align: left;
 }
 .hero__image {
   display: none;
@@ -96,9 +123,6 @@ body {
   }
   .hero__content p {
     font-size: 1.2rem;
-  }
-  .hero__content h1 {
-    font-size: 2.5rem;
   }
   .hero__image {
     display: block;
@@ -265,17 +289,6 @@ body {
     padding: 8rem 6rem;
   }
 }
-#projects h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  #projects h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-}
 #projects .projects {
   display: grid;
   gap: 2rem;
@@ -299,13 +312,13 @@ body {
   border-radius: 10px;
   margin-bottom: 1rem;
 }
-#projects .project h4 {
+#projects .project h2 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 #projects .project h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
   font-weight: 700;
   color: #000;
