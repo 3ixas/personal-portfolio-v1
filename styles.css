@@ -218,7 +218,7 @@ body {
 .about__text__title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: left;
 }
 .about__text__paragraph {
   color: var(--secondary-color);
@@ -267,15 +267,14 @@ body {
   padding: 4rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
 }
 .skills__heading {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 .skills__description {
   color: var(--secondary-color);
+  text-align: center;
   margin-bottom: 2rem;
   font-size: 1rem;
   line-height: 1.8;
@@ -312,6 +311,9 @@ body {
   .skills__heading {
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
+  }
+  .skills__description {
     text-align: center;
   }
   .skills__list {
