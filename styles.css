@@ -315,7 +315,6 @@ body {
     text-align: center;
   }
   .skills__list {
-    grid-template-columns: repeat(9, 1fr);
     gap: 2rem;
   }
   .skills__icon {
@@ -330,6 +329,9 @@ body {
 @media (min-width: 1024px) {
   .skills {
     padding: 8rem 6rem;
+  }
+  .skills__list {
+    grid-template-columns: repeat(9, 1fr);
   }
 }
 

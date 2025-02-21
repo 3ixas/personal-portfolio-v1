@@ -362,7 +362,6 @@ body {
         }
 
         &__list {
-            grid-template-columns: repeat(9, 1fr);
             gap: 2rem;
         }
 
@@ -378,7 +377,11 @@ body {
     }
 
     @media (min-width: 1024px) {
-    padding: 8rem 6rem;
+        padding: 8rem 6rem;
+
+        &__list {
+                grid-template-columns: repeat(9, 1fr);
+            }
     }
 }
 
