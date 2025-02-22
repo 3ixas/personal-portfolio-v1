@@ -57,3 +57,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tabsContainer = document.querySelector(".experience__tabs");
+    const tabs = document.querySelectorAll(".experience__tab");
+    const details = document.querySelectorAll(".experience__details");
+
+    // Enable horizontal scrolling on mobile
+    if (tabsContainer) {
+        tabsContainer.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            tabsContainer.scrollLeft += event.deltaY;
+        });
+    }
+
+    // Work Experience Tab Click Event
+    tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            // Remove active class from all tabs
+            tabs.forEach((t) => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            // Hide all details
+            details.forEach((detail) => detail.classList.remove("active"));
+
+            // Show the clicked tab's content
+            const targetId = tab.getAttribute("data-target");
+            document.getElementById(targetId).classList.add("active");
+        });
+    });
+});
+
+
