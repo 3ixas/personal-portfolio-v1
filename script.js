@@ -149,3 +149,24 @@ document.addEventListener("DOMContentLoaded", () => {
     // Update greeting every hour in case the user stays on the page
     setInterval(updateGreeting, 3600000); // 3600000 ms = 1 hour
 });
+
+
+// Scroll animations for Skills
+document.addEventListener("DOMContentLoaded", () => {
+    const skillCategories = document.querySelectorAll(".skills__category");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                    observer.unobserve(entry.target); // Stops observing once it's visible
+                }
+            });
+        },
+        { threshold: 0.2 }
+    );
+
+    skillCategories.forEach((category) => observer.observe(category));
+});
+
