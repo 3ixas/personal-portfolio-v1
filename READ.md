@@ -1,59 +1,76 @@
-# Portfolio Website
+# 📌 Personal Portfolio Website
 
-A personal portfolio website showcasing my skills, projects, and experience as a Junior Software Developer. Built using modern web development tools and responsive design principles.
+🚀 **First Coding Project! | Showcasing My Skills & Experience**  
+🌍 **Live Website:** [elias.dev](https://3ixas.github.io/web-project/)  
 
----
+## 📖 About the Project
+This is my **first coding project**, built to showcase my skills, projects, and experience as I transition into the world of software engineering.
 
-## Table of Contents
-- [About](#about)
-- [Project Scope](#project-scope)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
+The website is designed to be **visually engaging, interactive, and dynamic**, using modern **HTML, SCSS, and JavaScript/TypeScript** to create an impressive and professional presentation.
 
 ---
 
-## About
+## 🎨 Features & Functionality
 
-This portfolio website serves as a professional space to highlight my journey into software development and showcase my technical expertise and projects. It was created to reflect my skills in front-end and back-end development and to present myself to potential employers or collaborators.
+### 📌 Hero Section
+- **Dynamic Time-Based Greeting** (e.g., "Good Morning, I'm Elias!")
+- Smooth **fade-in animation** for a polished experience.
 
----
+### 📌 Skills Section
+- **Categorized skill sets** (Frontend, Backend, DevOps, Tools).
+- **Animated icons with a staggered entry effect**.
+- Responsive and interactive layout.
 
-## Project Scope
+### 📌 Experience Section
+- **Tabbed navigation** to switch between different job roles.
+- Smooth **scroll animation** for a better user experience.
+- Fully **responsive layout** (optimised for desktop & mobile).
 
-The goal of this project is to:
+### 📌 Projects Showcase
+- Clean **grid-based layout** for project displays.
+- **Hover effects** for better visual interaction.
+- External links for **GitHub Repos & Live Demos**.
 
-1. Provide a professional and visually appealing platform to showcase my software development skills and experience.
-2. Include a responsive design that adapts seamlessly to mobile, tablet, and desktop devices.
-3. Feature an accessible and user-friendly interface, adhering to web standards and best practices.
-4. Highlight my technical skills, projects, and professional experience in a structured and engaging format.
-5. Offer a contact section for networking opportunities and collaborations.
+### 📌 Contact Section
+- A **fully functional contact form** with an email action.
+- **CTA buttons** for LinkedIn, GitHub, and CV.
 
-This project also serves as a demonstration of my ability to:
-- Implement responsive web design using SCSS and media queries.
-- Use semantic HTML and optimise website accessibility.
-- Manage projects using Git version control and collaborate on web development.
-
----
-
-## Features
-
-- Fully responsive design for desktop and mobile
-- Clean, modern, and accessible UI/UX
-- Sections include:
-  - **Hero Section**: Introduction and tagline
-  - **About Me**: Background, journey, and expertise
-  - **Technical Skills**: Skills and tools proficiency
-  - **Projects**: Detailed showcase of past work
-  - **Contact**: Email and social links
-- Interactive hover effects on buttons and icons
-- Semantic HTML for accessibility
+### 📌 Dark Mode Toggle
+- **User preference is saved** for future visits.
+- **Smooth transition animation** when switching modes.
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
+- **Frontend**: HTML5, SCSS, TypeScript, JavaScript
+- **Styling**: SCSS (BEM methodology), CSS Animations
+- **Version Control**: Git, GitHub
+- **Deployment**: GitHub Pages
+- **Responsive Design**: Flexbox, Grid, Media Queries
+- **JavaScript Functionality**:
+  - Intersection Observer API for animations
+  - TypeScript for better type safety and scalability
 
-- **HTML5**: Semantic structure for the website.
-- **SCSS**: Modular, maintainable styling with reusable components.
-- **JavaScript**: Dynamic elements and interactivity (if applicable).
-- **Git**: Version control for managing project progress.
-- **Figma**: Design inspiration and layout planning.
+---
+
+## 📚 Lessons Learned
+Working on this portfolio has been a great **learning experience**. Some key takeaways include:
+
+- **Structuring SCSS with BEM** for maintainable and scalable styling.
+- **Implementing JavaScript animations** (Intersection Observer, event listeners).
+- **Handling responsiveness properly** to ensure an optimal experience across devices.
+- **Optimising accessibility** to make the portfolio user-friendly for all.
+- **Using Git and GitHub effectively**, learning best practices for version control.
+
+---
+
+## 🚀 Future Improvements
+Although the portfolio is complete, there are a few **enhancements** I’d like to make in future iterations:
+
+- **Performance optimisation**: Reduce asset sizes for **faster load times**.
+- **Custom email functionality**: Implement a **backend service** for contact form handling.
+- **Blog section**: Share insights, tutorials, and updates on my development journey.
+
+---
+
+### 🚀 **This portfolio marks my first step into professional software engineering—excited for what’s next!** 🎉
