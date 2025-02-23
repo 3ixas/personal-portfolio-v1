@@ -15,7 +15,7 @@
   --text-color: #000000;
   --primary-color: black;
   --secondary-color: grey;
-  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --box-shadow-color: rgba(0, 0, 0, 0.5);
 }
 
 .dark-mode {
@@ -23,7 +23,7 @@
   --text-color: #ffffff;
   --primary-color: white;
   --secondary-color: #bbbbbb;
-  --box-shadow-color: rgba(255, 255, 255, 0.1);
+  --box-shadow-color: rgba(255, 255, 255, 0.5);
 }
 
 body {
@@ -207,47 +207,76 @@ body {
   padding: 7rem 1.5rem 4rem;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 75vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .hero__greeting {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s ease-out forwards;
   transition: opacity 0.5s ease-in-out;
+}
+.hero__content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s ease-out forwards;
 }
 .hero__content p {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 .hero__content h1 {
-  text-align: left;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
-.hero__image {
-  display: none;
+.hero__content h1:hover {
+  transform: scale(1.05);
+}
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @media (min-width: 768px) {
   .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 6rem 3rem;
   }
-  .hero__content {
-    flex: 1;
-    max-width: 50%;
+  .hero__greeting {
+    font-size: 1.8rem;
   }
   .hero__content p {
     font-size: 1.2rem;
   }
-  .hero__image {
-    display: block;
-    flex: 1;
-    max-width: 50%;
-  }
-  .hero__image img {
-    width: 100%;
-    height: auto;
+  .hero__content h1 {
+    font-size: 3.5rem;
+    text-align: center;
   }
 }
 @media (min-width: 1024px) {
   .hero {
     padding: 8rem 6rem;
+  }
+  .hero__content h1 {
+    font-size: 4rem;
   }
 }
 
@@ -267,7 +296,8 @@ body {
   height: 200px;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 10px var(--box-shadow-color);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   animation: floatAnimation 3s infinite ease-in-out;
 }
