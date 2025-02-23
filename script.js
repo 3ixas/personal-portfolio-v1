@@ -170,3 +170,24 @@ document.addEventListener("DOMContentLoaded", () => {
     skillCategories.forEach((category) => observer.observe(category));
 });
 
+// Scroll animations for projects
+document.addEventListener("DOMContentLoaded", () => {
+    const projects = document.querySelectorAll(".project");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.2 }
+    );
+
+    projects.forEach((project) => {
+        observer.observe(project);
+    });
+});
+

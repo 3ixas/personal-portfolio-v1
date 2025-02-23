@@ -339,6 +339,7 @@ body {
         transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
         position: relative;
         animation: floatAnimation 3s infinite ease-in-out;
+        border: 1.5px solid var(--secondary-color);
     }
 
     &__image {
@@ -448,6 +449,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
         transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        border: 1.5px solid var(--secondary-color);
 
         &.fade-in {
             opacity: 1;
@@ -476,10 +478,11 @@ body {
         background: var(--primary-background);
         padding: 1rem;
         border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px var(--box-shadow-color);
         transition: transform 0.3s ease-in-out;
         opacity: 0;
         transform: translateY(20px);
+        border: 1.5px solid var(--secondary-color);
 
         &:hover {
             transform: scale(1.1);
@@ -664,6 +667,8 @@ body {
         background-color: var(--secondary-background);
         box-shadow: 0 4px 10px var(--box-shadow-color);
         transition: opacity 0.3s ease-in-out;
+        border: 1.5px solid var(--secondary-color);
+        border-radius: 8px;
 
         h3 {
             font-size: 1.5rem;
@@ -782,6 +787,7 @@ body {
     padding: 4rem 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 
     @media (min-width: 768px) {
         padding: 6rem 3rem;
@@ -805,33 +811,45 @@ body {
         background-color: var(--background-color);
         color: var(--text-color);
         box-shadow: 0 4px 10px var(--box-shadow-color);
-        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-        
-
+        border: 1.5px solid var(--secondary-color);
         padding: 1rem;
         border-radius: 10px;
         text-align: left;
+        overflow: hidden;
+        position: relative;
+        padding: 1rem;
+        text-align: left;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        &__img {
+            box-shadow: 0 4px 10px var(--box-shadow-color);
+            border: 1.5px solid var(--secondary-color);
+            border-radius: 12px;
+        }
 
         img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
-            margin-bottom: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
         }
 
         h2 {
-            color: var(--text-color);
-
             font-size: 1.5rem;
+            font-weight: bold;
             margin-bottom: 0.5rem;
-            font-weight: 700;
             text-align: left;
         }
 
         p {
             color: var(--text-color);
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: bold;
             line-height: 1.8;
             margin-bottom: 0.5rem;
         }
@@ -846,6 +864,17 @@ body {
                 font-size: 0.95rem;
                 line-height: 1.5;
                 margin-bottom: 0.5rem;
+                position: relative;
+                padding-left: 1.5rem;
+                list-style: none;
+
+                &::before {
+                    content: "✔";
+                    position: absolute;
+                    left: 0;
+                    color: var(--primary-color);
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -870,8 +899,7 @@ body {
                 transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
 
                 &:hover {
-                    background-color: var(--secondary-color);
-
+                    box-shadow: 0 4px 10px var(--box-shadow-color);
                     transform: scale(1.05);
                 }
 
@@ -893,6 +921,16 @@ body {
                     justify-content: center;
                 }
             }
+        }
+
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out,
+        transform 0.6s ease-out;
+
+        &.fade-in {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }
@@ -930,7 +968,7 @@ body {
         width: 100%;
         padding: 1rem;
         font-size: 1rem;
-        border: 2px solid var(--secondary-color);
+        border: 1.5px solid var(--secondary-color);
         border-radius: 8px;
         background-color: var(--background-color);
         color: var(--text-color);
