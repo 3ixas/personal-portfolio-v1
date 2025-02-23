@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "CustomInter";
   src: url(./fonts/Inter-Italic-VariableFont_opsz\,wght.ttf) format("truetype");
@@ -135,14 +134,12 @@ h2 {
   transform: scale(0.95);
 }
 
-/* 📍 Hamburger Menu Icon */
 .mobile-nav__menu-icon {
   display: none;
   font-size: 2rem;
   cursor: pointer;
 }
 
-/* 📍 Mobile Styles */
 @media (max-width: 768px) {
   .desktop-nav {
     background-color: var(--background-color);
@@ -187,7 +184,6 @@ h2 {
     top: 1rem;
   }
 }
-/* 📍 Dark Mode Button (Keep it on the Right) */
 .dark-mode-button {
   position: fixed;
   top: 1rem;
@@ -211,6 +207,9 @@ body {
   padding: 7rem 1.5rem 4rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+.hero__greeting {
+  transition: opacity 0.5s ease-in-out;
 }
 .hero__content p {
   font-size: 1rem;

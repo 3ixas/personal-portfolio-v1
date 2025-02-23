@@ -107,3 +107,45 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 });
+
+// Dynamic hero greeting
+document.addEventListener("DOMContentLoaded", () => {
+    const greetingElement = document.getElementById("hero-greeting");
+
+    // Function to get user's local time and return the correct greeting
+    function getGreeting() {
+        const now = new Date();
+        const hours = now.getHours(); // Get current hour in user's local time
+
+        // Determine the appropriate greeting
+        if (hours >= 5 && hours < 12) {
+            return "👋 Good morning, I'm Elias!";
+        } else if (hours >= 12 && hours < 17) {
+            return "👋 Good afternoon, I'm Elias!";
+        } else if (hours >= 17 && hours < 21) {
+            return "👋 Good evening, I'm Elias!";
+        } else {
+            return "👋 Hello night owl, I'm Elias!";
+        }
+    }
+
+    // Function to update greeting with fade effect
+    function updateGreeting() {
+        const newGreeting = getGreeting();
+
+        // Apply fade-out effect
+        greetingElement.style.opacity = "0";
+
+        // Wait for fade-out to complete before changing text
+        setTimeout(() => {
+            greetingElement.textContent = newGreeting;
+            greetingElement.style.opacity = "1"; // Fade back in
+        }, 500); // Matches CSS transition time
+    }
+
+    // Initial update
+    updateGreeting();
+
+    // Update greeting every hour in case the user stays on the page
+    setInterval(updateGreeting, 3600000); // 3600000 ms = 1 hour
+});
