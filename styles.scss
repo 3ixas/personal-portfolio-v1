@@ -288,7 +288,7 @@ body {
 
     // Responsive styles
     @media (min-width: 768px) {
-        padding: 6rem 3rem;
+        padding: 9rem 3rem;
 
         &__greeting {
             font-size: 1.8rem;
@@ -307,7 +307,7 @@ body {
     }
 
     @media (min-width: 1024px) {
-        padding: 8rem 6rem;
+        padding: 9rem 6rem;
 
         &__content {
             h1 {
@@ -381,7 +381,7 @@ body {
 
     // Desktop adjustments
     @media (min-width: 768px) {
-        padding: 6rem 3rem;
+        padding: 19rem 3rem;
 
         &__container {
             flex-direction: row;
@@ -414,7 +414,7 @@ body {
 
     // Large screen spacing
     @media (min-width: 1024px) {
-        padding: 8rem 6rem;
+        padding: 17rem 6rem;
     }
 }
 
@@ -544,6 +544,7 @@ body {
     }
 
     @media (min-width: 768px) {
+        padding: 6rem 3rem;
         &__categories {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -737,6 +738,10 @@ body {
 
 @media (min-width: 768px) {
 
+    .experience {
+        padding: 18rem 1rem;
+    }
+
     .experience__container {
         display: flex;
         flex-direction: row;
@@ -794,7 +799,7 @@ body {
     }
 
     @media (min-width: 1024px) {
-    padding: 8rem 6rem;
+    padding: 4rem 6rem;
     }
 
     .projects {
@@ -937,10 +942,18 @@ body {
 
 .contact {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     background-color: var(--background-color);
     color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease;
+
+    @media (min-width: 768px) {
+            padding: 15rem 6rem 20rem;
+        }
+
+    @media (min-width: 1024px) {
+            padding: 8rem 6rem;
+        }
 
     &__heading {
         font-size: 2rem;
