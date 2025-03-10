@@ -359,11 +359,6 @@ body {
     text-align: left;
   }
 }
-@media (min-width: 1024px) {
-  .about {
-    padding: 17rem 6rem;
-  }
-}
 
 .skills {
   padding: 4rem 1.5rem;
