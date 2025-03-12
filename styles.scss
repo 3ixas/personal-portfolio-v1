@@ -349,6 +349,18 @@ body {
     }
 
     &__text {
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover, a:focus {
+            color: #ddd;
+            text-decoration: underline;
+        }
+
         &__title {
             font-size: 1.5rem;
             margin-bottom: 1rem;

@@ -308,6 +308,15 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.about__text a {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+.about__text a:hover, .about__text a:focus {
+  color: #ddd;
+  text-decoration: underline;
+}
 .about__text__title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
