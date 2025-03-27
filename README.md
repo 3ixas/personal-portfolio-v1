@@ -17,7 +17,7 @@ The website is designed to be **visually engaging, interactive, and dynamic**, u
 - Smooth **fade-in animation** for a polished experience.
 
 ### 📌 Skills Section
-- **Categorized skill sets** (Frontend, Backend, DevOps, Tools).
+- **Categorised skill sets** (Frontend, Backend, DevOps, Tools).
 - **Animated icons with a staggered entry effect**.
 - Responsive and interactive layout.
 
