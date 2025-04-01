@@ -37,23 +37,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.getElementById("dark-mode-toggle");
     const body = document.body;
 
-    // Check if user has a saved preference
-    if (localStorage.getItem("theme") === "dark") {
+    // Check saved preference or default to dark
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark" || !savedTheme) {
         body.classList.add("dark-mode");
         darkModeToggle.textContent = "☀️"; // Switch icon to sun for light mode
+    } else {
+        darkModeToggle.textContent = "🌙"; // Switch icon to moon for dark mode
     }
 
-    // Toggle dark mode when button is clicked
+    // Toggle dark mode on button click
     darkModeToggle.addEventListener("click", function () {
         body.classList.toggle("dark-mode");
 
-        // Save preference in local storage
         if (body.classList.contains("dark-mode")) {
             localStorage.setItem("theme", "dark");
-            darkModeToggle.textContent = "☀️"; // Switch icon to sun
+            darkModeToggle.textContent = "☀️";
         } else {
             localStorage.setItem("theme", "light");
-            darkModeToggle.textContent = "🌙"; // Switch icon back to moon
+            darkModeToggle.textContent = "🌙";
         }
     });
 });
