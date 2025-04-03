@@ -1,7 +1,7 @@
 # 📌 Personal Portfolio Website
 
 🚀 **First Coding Project! | Showcasing My Skills & Experience**  
-🌍 **Live Website:** [elias.dev](https://3ixas.github.io/web-project/)  
+🌍 **Live Website:** [eliasb.dev](https://eliasb.dev/)  
 
 ## 📖 About the Project
 This is my **first coding project**, built to showcase my skills, projects, and experience as I transition into the world of software engineering.
